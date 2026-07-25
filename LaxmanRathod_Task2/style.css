@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+body {
+  background-color: #faf8f5;
+  color: #2b2b2b;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background-color: #1e2a3a;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #f4a500;
+  font-style: italic;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Image Section */
+.image-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.image-section figure img {
+  max-width: 100%;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-section figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Bio Section */
+.bio-section {
+  margin-bottom: 50px;
+}
+
+.bio-section h2,
+.timeline-section h2,
+.link-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #1e2a3a;
+  border-bottom: 3px solid #f4a500;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.bio-section p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Timeline Section */
+.timeline-section {
+  margin-bottom: 50px;
+}
+
+.timeline {
+  list-style: none;
+  border-left: 3px solid #f4a500;
+  padding-left: 25px;
+  margin-top: 20px;
+}
+
+.timeline li {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #f4a500;
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-weight: bold;
+  color: #1e2a3a;
+  display: block;
+  font-size: 15px;
+}
+
+.timeline .event {
+  font-size: 15px;
+  color: #444;
+  margin-top: 3px;
+}
+
+/* Link Section */
+.link-section {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #eee7db;
+  border-radius: 8px;
+}
+
+.link-section a {
+  color: #1e2a3a;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #f4a500;
+}
+
+.link-section a:hover {
+  color: #f4a500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #1e2a3a;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+}

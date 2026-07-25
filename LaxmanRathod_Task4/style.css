@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(18deg, #003285, #756AB6);
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  background-color: #f4f4f4;
+  color: #777;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tab-btn.active {
+  background-color: #fff;
+  color: #756AB6;
+  border-bottom: 3px solid #756AB6;
+}
+
+/* Forms */
+.auth-form {
+  padding: 30px;
+}
+
+.auth-form.hidden {
+  display: none;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e2a3a;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #756AB6;
+}
+
+/* Password field with show/hide */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 55px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  color: #756AB6;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Messages */
+.message {
+  font-size: 13px;
+  margin-bottom: 15px;
+  min-height: 16px;
+}
+
+.message.error {
+  color: #e74c3c;
+}
+
+.message.success {
+  color: #756AB6;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #003285;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #756AB6;
+}

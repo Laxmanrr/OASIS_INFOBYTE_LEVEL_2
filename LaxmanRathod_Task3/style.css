@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(10deg, #610C9F, #E95793);
+  padding: 20px;
+}
+
+.todo-box {
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.todo-box h1 {
+  text-align: center;
+  color: #1e2a3a;
+  margin-bottom: 20px;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-row input:focus {
+  border-color: #4db6ac;
+}
+
+.input-row button {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #E95793;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-row button:hover {
+  background-color: #610C9F;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  color: #555;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn.active {
+  background-color: #1e2a3a;
+  color: #fff;
+  border-color: #1e2a3a;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#taskList li .task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+#taskList li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #4db6ac;
+}
+
+#taskList li span {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+#taskList li.done span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+#taskList li button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#taskList li button:hover {
+  background-color: #c0392b;
+}
+
+.task-count {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
